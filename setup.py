@@ -129,7 +129,7 @@ class CMakeBuild(build_ext):
 
 setup(
     name="LinkPython-extern",
-    description="Python wrapper for Ableton Link",
+    description="A fork of the LinkPython wrapper for Ableton Link",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     version="1.0.0",
