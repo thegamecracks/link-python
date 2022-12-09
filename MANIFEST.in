@@ -1,1 +1,3 @@
-recursive-include modules *
+graft modules
+graft src
+include CMakeLists.txt
