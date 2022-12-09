@@ -14,6 +14,7 @@ on:
 
 env:
   CIBW_BUILD: ${{ inputs.wheel_versions }}
+  CIBW_REPAIR_WHEEL_COMMAND_LINUX: ""
 
 jobs:
   make_sdist:
