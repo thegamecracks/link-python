@@ -1,3 +1,10 @@
 graft modules
 graft src
 include CMakeLists.txt
+global-exclude *.pdf
+prune **/.github
+prune **/assets
+prune **/ci
+prune **/docs
+prune **/examples
+prune **/tests
