@@ -12,10 +12,6 @@ on:
         required: true
         type: boolean
 
-env:
-  CIBW_BUILD: ${{ inputs.wheel_versions }}
-  CIBW_REPAIR_WHEEL_COMMAND_LINUX: ""
-
 jobs:
   make_sdist:
     name: Build source distribution
@@ -49,13 +45,9 @@ jobs:
 
       - name: Build wheels
         uses: pypa/cibuildwheel@v2.11.3
-        # env:
-        #   CIBW_SOME_OPTION: value
-        #    ...
-        # with:
-        #   package-dir: .
-        #   output-dir: wheelhouse
-        #   config-file: "{package}/pyproject.toml"
+        env:
+          CIBW_BUILD: ${{ inputs.wheel_versions }}
+          CIBW_REPAIR_WHEEL_COMMAND_LINUX: ""
 
       - uses: actions/upload-artifact@v3
         with:
