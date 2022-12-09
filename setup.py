@@ -145,6 +145,7 @@ setup(
     ],
     url="https://github.com/thegamecracks/link-python",
     python_requires=">=3.6,<3.11",
+    include_package_data=True,
     ext_modules=[CMakeExtension("LinkPython-extern")],
     cmdclass={"build_ext": CMakeBuild},
     zip_safe=False,
