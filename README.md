@@ -1,25 +1,12 @@
-# Python wrapper for [Ableton Link](https://github.com/ableton/link.git)
+# Python wrapper for [Ableton Link][1]
 
-***For a [version published on PyPI](https://pypi.org/project/LinkPython) refer to [the munshkr fork](https://github.com/munshkr/link-python).***
+This fork was created to streamline the user experience for installing LinkPython
+by uploading pre-built wheels on PyPI. More information about LinkPython
+can be found [in their repository][2].
 
 ## License:
-This depends on [Link](https://github.com/ableton/link.git) and [pybind11](https://github.com/pybind/pybind11). Please mind the licenses of those libraries and their dependencies.
+This depends on [Link][1] and [pybind11][3]. Please mind the licenses of those libraries and their dependencies.
 
-## Get:
-```
-git clone --recursive https://github.com/gonzaloflirt/link-python.git
-```
-## Build:
-Make sure python 3 is installed on your system.
-```
-mkdir build
-cd build
-cmake ..
-cmake --build .
-```
-
-## Run example:
-
-```
-./example/LinkHut.py
-```
+[1]: https://github.com/ableton/link.git
+[2]: https://github.com/gonzaloflirt/link-python
+[3]: https://github.com/pybind/pybind11
