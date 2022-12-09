@@ -3,10 +3,17 @@ name: Build
 on:
   workflow_dispatch:
     inputs:
+      wheel_versions:
+        description: Wheel versions to build
+        required: true
+        default: cp36* cp37* cp38* cp39* cp310*
       publish:
-        description: "Publish wheels"
+        description: Publish wheels
         required: true
         type: boolean
+
+env:
+  CIBW_BUILD: ${{ inputs.wheel_versions }}
 
 jobs:
   make_sdist:

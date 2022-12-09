@@ -1,6 +1,3 @@
 [build-system]
 requires = ["setuptools", "wheel", "ninja", "cmake>=3.4"]
 build-backend = "setuptools.build_meta"
-
-[tool.cibuildwheel]
-cibw-build = ["cp36*", "cp37*", "cp38*", "cp39*", "cp310*"]
