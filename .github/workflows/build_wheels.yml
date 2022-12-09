@@ -1,6 +1,12 @@
 name: Build
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publish wheels"
+        required: true
+        type: boolean
 
 jobs:
   make_sdist:
@@ -48,6 +54,7 @@ jobs:
           path: ./wheelhouse/*.whl
 
   upload_wheels:
+    if:  ${{ inputs.publish }}
     needs: [build_wheels, make_sdist]
     runs-on: ubtuntu-latest
 
