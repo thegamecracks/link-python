@@ -128,6 +128,22 @@ class CMakeBuild(build_ext):
 
 
 setup(
+    name="LinkPython-extern",
+    description="Python wrapper for Ableton Link",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    version="0.0.1",
+    author="gonzaloflirt",
+    maintainer="thegamecracks",
+    license_files=["LICENSE.md"],
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "Programming Language :: C++",
+        "Programming Language :: Python",
+        "Topic :: System :: Networking",
+    ],
+    url="https://github.com/thegamecracks/link-python",
     ext_modules=[CMakeExtension("LinkPython-extern")],
     cmdclass={"build_ext": CMakeBuild},
 )
