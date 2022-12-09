@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=65.6.3", "wheel", "ninja", "cmake>=3.4"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LinkPython-extern"
+description = "Python wrapper for Ableton Link"
+readme = "README.md"
+version = "0.0.1"
+authors = [{ name = "gonzaloflirt" }]
+maintainers = [{ name = "thegamecracks" }]
+license = { file = "LICENSE.md" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: C++",
+    "Programming Language :: Python",
+    "Topic :: System :: Networking",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/thegamecracks/link-python"
+"Issue Tracker" = "https://github.com/thegamecracks/link-python/issues"
