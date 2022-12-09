@@ -62,6 +62,7 @@ jobs:
           path: ./wheelhouse/*.whl
 
   upload_wheels:
+    name: Upload wheels to PyPI
     if:  ${{ inputs.publish }}
     needs: [build_wheels, make_sdist]
     runs-on: ubtuntu-latest
