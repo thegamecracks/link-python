@@ -47,7 +47,6 @@ jobs:
         uses: pypa/cibuildwheel@v2.11.3
         env:
           CIBW_BUILD: ${{ inputs.wheel_versions }}
-          CIBW_REPAIR_WHEEL_COMMAND_LINUX: ""
 
       - uses: actions/upload-artifact@v3
         with:
