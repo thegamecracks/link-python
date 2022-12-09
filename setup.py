@@ -132,7 +132,7 @@ setup(
     description="Python wrapper for Ableton Link",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    version="0.1.0",
+    version="1.0.0",
     author="gonzaloflirt",
     maintainer="thegamecracks",
     license_files=["LICENSE.md"],
