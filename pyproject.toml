@@ -21,3 +21,6 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/thegamecracks/link-python"
 "Issue Tracker" = "https://github.com/thegamecracks/link-python/issues"
+
+[tool.cibuildwheel]
+cibw-build = ["cp36*", "cp37*", "cp38*", "cp39*", "cp310*"]
