@@ -137,7 +137,7 @@ setup(
     maintainer="thegamecracks",
     license_files=["LICENSE.md"],
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
         "Programming Language :: C++",
         "Programming Language :: Python",
