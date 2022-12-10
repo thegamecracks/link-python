@@ -33,9 +33,9 @@ pip install git+https://github.com/thegamecracks/link-python
 ```
 
 ## License:
-This depends on [Link][1] and [pybind11][5]. Please mind the licenses of those libraries and their dependencies.
+This depends on [Link][1] and [pybind11][4]. Please mind the licenses of those libraries and their dependencies.
 
 [1]: https://github.com/ableton/link.git
 [2]: https://github.com/gonzaloflirt/link-python
 [3]: https://pypi.org/project/LinkPython-extern/
-[3]: https://github.com/pybind/pybind11
+[4]: https://github.com/pybind/pybind11
