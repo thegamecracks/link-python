@@ -6,6 +6,7 @@
 /lib/
 .idea/*
 *.egg-info/
+dist/
 
 # System temporary files
 .DS_Store
