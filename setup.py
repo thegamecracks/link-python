@@ -144,7 +144,7 @@ setup(
         "Topic :: System :: Networking",
     ],
     url="https://github.com/thegamecracks/link-python",
-    python_requires=">=3.6,<=3.11",
+    python_requires=">=3.6,<3.12",
     include_package_data=True,
     ext_modules=[CMakeExtension("LinkPython-extern")],
     cmdclass={"build_ext": CMakeBuild},
