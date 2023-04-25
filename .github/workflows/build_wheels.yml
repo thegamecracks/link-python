@@ -57,6 +57,7 @@ jobs:
     name: Upload wheels to PyPI
     if:  ${{ inputs.publish }}
     needs: [build_wheels, make_sdist]
+    environment: release
     runs-on: ubuntu-latest
     permissions:
       id-token: write
