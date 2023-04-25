@@ -44,7 +44,7 @@ jobs:
           submodules: recursive
 
       - name: Build wheels
-        uses: pypa/cibuildwheel@v2.11.3
+        uses: pypa/cibuildwheel@v2.12.3
         env:
           CIBW_BUILD: ${{ inputs.wheel_versions }}
 
@@ -65,7 +65,7 @@ jobs:
           path: dist
 
       - name: Publish package
-        uses: pypa/gh-action-pypi-publish@v1.6.4
+        uses: pypa/gh-action-pypi-publish@v1.8.5
         with:
           user: __token__
           password: ${{ secrets.PYPI_API_TOKEN }}
