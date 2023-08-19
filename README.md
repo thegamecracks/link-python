@@ -7,10 +7,14 @@ This fork was created to streamline the user experience for installing LinkPytho
 by uploading pre-built wheels on PyPI. More information about LinkPython
 can be found [in their repository][2].
 
-## Python 3.11 support
+## Newer Python support
 
-As of v1.0.1, pybind11 has been updated to 2.10.1+ which means this package has
-support for Python 3.11.
+**v1.0.1** adds support for Python 3.11 after updating pybind11 to 2.10.1.
+Pre-built wheels are available on PyPI.
+
+**v1.0.4a1** adds support for Python 3.12 after updating pybind11 to 2.11.1.
+Pre-built wheels are available on PyPI.
+This version must be installed using `pip install LinkPython-extern==1.0.4a1`.
 
 ## Installation
 
