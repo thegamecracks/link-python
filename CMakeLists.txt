@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
+project(LinkPython)
+
 include(modules/link/AbletonLinkConfig.cmake)
 
 add_subdirectory(modules/pybind11)
