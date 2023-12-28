@@ -12,9 +12,8 @@ can be found [in their repository][2].
 **v1.0.1** adds support for Python 3.11 after updating pybind11 to 2.10.1.
 Pre-built wheels are available on PyPI.
 
-**v1.0.4a1** adds support for Python 3.12 after updating pybind11 to 2.11.1.
+**v1.0.4** adds support for Python 3.12 after updating pybind11 to 2.11.1.
 Pre-built wheels are available on PyPI.
-This version must be installed using `pip install LinkPython-extern==1.0.4a1`.
 
 ## Installation
 
