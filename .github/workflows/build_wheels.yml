@@ -38,12 +38,6 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
-      - name: Install apt dependencies
-        if: ${{ startsWith(matrix.os, 'ubuntu') }}
-        run: |
-          sudo apt-get update
-          sudo apt-get install libatomic1
-
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
