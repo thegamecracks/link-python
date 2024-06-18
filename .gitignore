@@ -1,4 +1,5 @@
 # IDE generated files and build outputs
+.vscode/
 /build/
 /ide/
 /output/
