@@ -95,6 +95,52 @@ class SessionState:
         at the given time.
         """
 
+    def forceBeatAtTime(self, __beat: float, __time: int, __quantum: float) -> None:
+        """Rudely re-map the beat/time relationship for all peers
+        in a session.
+
+        DANGER: This method should only be needed in
+        certain special circumstances. Most applications should not
+        use it. It is very similar to requestBeatAtTime except that it
+        does not fall back to the quantizing behavior when it is in a
+        session with other peers. Calling this method will
+        unconditionally map the given beat to the given time and
+        broadcast the result to the session. This is very anti-social
+        behavior and should be avoided.
+
+        One of the few legitimate uses of this method is to
+        synchronize a Link session with an external clock source. By
+        periodically forcing the beat/time mapping according to an
+        external clock source, a peer can effectively bridge that
+        clock into a Link session. Much care must be taken at the
+        application layer when implementing such a feature so that
+        users do not accidentally disrupt Link sessions that they may
+        join.
+
+        """
+
+    def timeForIsPlaying(self) -> int:
+        """Get the time in microseconds at which a transport start/stop occurs."""
+
+    def requestBeatAtStartPlayingTime(self, __beat: float, __quantum: float) -> None:
+        """Convenience function to attempt to map the given beat to the time
+        when transport is starting to play in context of the given quantum.
+
+        This function evaluates to a no-op if isPlaying() equals false.
+
+        """
+
+    def setIsPlayingAndRequestBeatAtTime(
+        self,
+        __isPlaying: bool,
+        __time: int,
+        __beat: float,
+        __quantum: float,
+    ) -> None:
+        """Convenience function to start or stop transport at a given time and
+        attempt to map the given beat to this time in context of the given quantum.
+        """
+
 class Link:
     """Represents a participant in a Link session.
 
@@ -147,7 +193,7 @@ class Link:
 
         """
 
-    def captureSessionState(self) -> SessionState:
+    def captureAppSessionState(self) -> SessionState:
         """Capture the current Link Session State from an application thread.
 
         Provides a mechanism for capturing the Link Session
@@ -159,7 +205,7 @@ class Link:
 
         """
 
-    def commitSessionState(self, __state: SessionState) -> None:
+    def commitAppSessionState(self, __state: SessionState) -> None:
         """Commit the given Session State to the Link session from an
         application thread.
 
@@ -170,6 +216,9 @@ class Link:
         :param state: The session state to be committed.
 
         """
+
+    captureSessionState = captureAppSessionState
+    commitSessionState = commitAppSessionState
 
     def setNumPeersCallback(self, __callback: Callable[[int], Any]) -> None:
         """Register a callback to be notified when the number of

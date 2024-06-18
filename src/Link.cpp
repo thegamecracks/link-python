@@ -29,15 +29,29 @@ PYBIND11_MODULE(_link, m)
            { sessionState.requestBeatAtTime(beat, micros(time), quantum); })
       .def("isPlaying", &SessionState::isPlaying)
       .def("setIsPlaying", [](SessionState &sessionState, const bool isPlaying, const uint64_t time)
-           { sessionState.setIsPlaying(isPlaying, micros(time)); });
+           { sessionState.setIsPlaying(isPlaying, micros(time)); })
+      .def("forceBeatAtTime", [](SessionState &sessionState, double beat, uint64_t time, double quantum)
+           { sessionState.forceBeatAtTime(beat, micros(time), quantum); })
+      .def("timeForIsPlaying", [](SessionState &sessionState)
+           { return sessionState.timeForIsPlaying().count(); })
+      .def("requestBeatAtStartPlayingTime", [](SessionState &sessionState, double beat, double quantum)
+           { sessionState.requestBeatAtStartPlayingTime(beat, quantum); })
+      .def("setIsPlayingAndRequestBeatAtTime", [](SessionState &sessionState, bool isPlaying, uint64_t time, double beat, double quantum)
+           { sessionState.setIsPlayingAndRequestBeatAtTime(isPlaying, micros(time), beat, quantum); })
+  ;
 
   class_<Link>(m, "Link")
       .def(init<const double &>())
       .def_property("enabled", &Link::isEnabled, &Link::enable)
       .def("numPeers", &Link::numPeers)
       .def("clock", &Link::clock)
+
+      .def("captureAppSessionState", &Link::captureAppSessionState)
+      .def("commitAppSessionState", &Link::commitAppSessionState)
+      // Aliases for backwards-compatibility
       .def("captureSessionState", &Link::captureAppSessionState)
       .def("commitSessionState", &Link::commitAppSessionState)
+
       .def_property("startStopSyncEnabled",
                     &Link::isStartStopSyncEnabled, &Link::enableStartStopSync)
       .def("setNumPeersCallback", [](Link &link, const std::function<void(std::size_t)> &callback)
@@ -45,5 +59,6 @@ PYBIND11_MODULE(_link, m)
       .def("setTempoCallback", [](Link &link, const std::function<void(double)> &callback)
            { link.setTempoCallback(callback); })
       .def("setStartStopCallback", [](Link &link, const std::function<void(bool)> &callback)
-           { link.setStartStopCallback(callback); });
+           { link.setStartStopCallback(callback); })
+  ;
 }
