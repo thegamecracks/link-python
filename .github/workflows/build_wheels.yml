@@ -72,8 +72,9 @@ jobs:
 
       - uses: actions/download-artifact@v4
         with:
-          name: wheel-${{ matrix.os }}
           path: dist
+          pattern: wheel-*
+          merge-multiple: true
 
       - name: Publish package
         uses: pypa/gh-action-pypi-publish@v1.9.0
