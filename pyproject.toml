@@ -1,3 +1,23 @@
 [build-system]
 requires = ["setuptools", "wheel", "ninja", "cmake>=3.4"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "LinkPython-extern"
+version = "1.0.4"
+description = "A fork of the LinkPython wrapper for Ableton Link"
+requires-python = ">=3.6,<3.13"
+authors = [{ name = "gonzaloflirt" }]
+maintainers = [{ name = "thegamecracks" }]
+readme = "README.md"
+license = { file = "LICENSE.md" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: C++",
+    "Programming Language :: Python",
+    "Topic :: System :: Networking",
+]
+
+[project.urls]
+Homepage = "https://github.com/thegamecracks/link-python"
