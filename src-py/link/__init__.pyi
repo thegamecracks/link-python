@@ -175,7 +175,7 @@ class Link:
 
     """
 
-    def __init__(self, __bpm: float):
+    def __init__(self, __bpm: float) -> None:
         """
         :param bpm: The initial tempo of the session.
         """
