@@ -21,3 +21,6 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/thegamecracks/link-python"
+
+[tool.setuptools.packages.find]
+where = ["src-py"]

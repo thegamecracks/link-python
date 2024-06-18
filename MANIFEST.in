@@ -1,5 +1,6 @@
 graft modules
 graft src
+graft src-py
 include CMakeLists.txt
 global-exclude *.pdf
 prune **/.github

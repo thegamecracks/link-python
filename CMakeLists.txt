@@ -6,6 +6,6 @@ include(modules/link/AbletonLinkConfig.cmake)
 
 add_subdirectory(modules/pybind11)
 
-pybind11_add_module(link src/Link.cpp)
+pybind11_add_module(_link src/Link.cpp)
 
-target_link_libraries(link PRIVATE Ableton::Link)
+target_link_libraries(_link PRIVATE Ableton::Link)
