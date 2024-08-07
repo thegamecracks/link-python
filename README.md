@@ -18,8 +18,10 @@ can be found [in their repository][2].
 | CPython 3.10  |   ✅   |   ✅   |   ✅   |  ✅  | ✅   |
 | CPython 3.11  |   ❌   |   ✅   |   ✅   |  ✅  | ✅   |
 | CPython 3.12  |   ❌   |   ❌   |   ✅   |  ✅  | ✅   |
-| CPython 3.13  |   ❌   |   ❌   |   ❌   |  ✅  | ✅   |
+| CPython 3.13  |   ❌   |   ❌   |   ❌   |  ✅¹ | ✅¹  |
 | CPython 3.14+ |   ❌   |   ❌   |   ❌   |  ❌  | ❌   |
+
+¹ Free-threaded builds of CPython are not yet supported.
 
 ## Installation
 
