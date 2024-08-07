@@ -9,19 +9,17 @@ can be found [in their repository][2].
 
 ## Python compatibility
 
-|               | v1.0.0 | v1.0.1 | v1.0.4 | v1.1.0a1 | main |
-|---------------|--------|--------|--------|----------|------|
-| CPython 3.6   |   ✅   |   ✅   |   ✅   |   ❌   | ❌   |
-| CPython 3.7   |   ✅   |   ✅   |   ✅   |   ✅   | ✅   |
-| CPython 3.8   |   ✅   |   ✅   |   ✅   |   ✅   | ✅   |
-| CPython 3.9   |   ✅   |   ✅   |   ✅   |   ✅   | ✅   |
-| CPython 3.10  |   ✅   |   ✅   |   ✅   |   ✅   | ✅   |
-| CPython 3.11  |   ❌   |   ✅   |   ✅   |   ✅   | ✅   |
-| CPython 3.12  |   ❌   |   ❌   |   ✅   |   ✅   | ✅   |
-| CPython 3.13  |   ❌   |   ❌   |   ❌   |   ❌   | ✅¹  |
-| CPython 3.14+ |   ❌   |   ❌   |   ❌   |   ❌   | ❌   |
-
-¹ 3.13 support is currently experimental.
+|               | v1.0.0 | v1.0.1 | v1.0.4 | v1.1.0 | main |
+|---------------|--------|--------|--------|--------|------|
+| CPython 3.6   |   ✅   |   ✅   |   ✅   |  ❌  | ❌   |
+| CPython 3.7   |   ✅   |   ✅   |   ✅   |  ✅  | ✅   |
+| CPython 3.8   |   ✅   |   ✅   |   ✅   |  ✅  | ✅   |
+| CPython 3.9   |   ✅   |   ✅   |   ✅   |  ✅  | ✅   |
+| CPython 3.10  |   ✅   |   ✅   |   ✅   |  ✅  | ✅   |
+| CPython 3.11  |   ❌   |   ✅   |   ✅   |  ✅  | ✅   |
+| CPython 3.12  |   ❌   |   ❌   |   ✅   |  ✅  | ✅   |
+| CPython 3.13  |   ❌   |   ❌   |   ❌   |  ✅  | ✅   |
+| CPython 3.14+ |   ❌   |   ❌   |   ❌   |  ❌  | ❌   |
 
 ## Installation
 
