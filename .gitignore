@@ -9,6 +9,11 @@
 *.egg-info/
 dist/
 
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
 # System temporary files
 .DS_Store
 *~
