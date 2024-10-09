@@ -53,7 +53,7 @@ jobs:
           submodules: recursive
 
       - name: Build wheels
-        uses: pypa/cibuildwheel@v2.20
+        uses: pypa/cibuildwheel@v2.21
         env:
           CIBW_BUILD: ${{ inputs.wheel_versions }}
           CIBW_FREE_THREADED_SUPPORT: true
