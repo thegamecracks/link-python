@@ -19,8 +19,17 @@ classifiers = [
 ]
 dynamic = ["version"]
 
+[project.optional-dependencies]
+tests = ["pytest>=8.3.3"]
+
 [project.urls]
 Homepage = "https://github.com/thegamecracks/link-python"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+    "--ignore=modules/",
+]
 
 [tool.setuptools.packages.find]
 where = ["src-py"]
