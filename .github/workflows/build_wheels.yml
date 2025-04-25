@@ -48,11 +48,15 @@ jobs:
       matrix:
         include:
           - os: ubuntu-latest
-            archs: x86_64 aarch64
+            archs: auto
           - os: ubuntu-latest
-            archs: i686 s390x
+            archs: aarch64
           - os: ubuntu-latest
-            archs: ppc64le armv7l
+            archs: armv7l
+          - os: ubuntu-latest
+            archs: ppc64le
+          - os: ubuntu-latest
+            archs: s390x
           - os: windows-latest
             archs: auto
           - os: macos-13
@@ -69,7 +73,7 @@ jobs:
           submodules: recursive
 
       - name: Set up QEMU
-        if: runner.os == 'Linux' && runner.arch == 'X64'
+        if: runner.os == 'Linux' && runner.arch == 'X64' && matrix.archs != 'auto'
         uses: docker/setup-qemu-action@v3
         with:
           platforms: all
