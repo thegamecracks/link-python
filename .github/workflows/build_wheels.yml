@@ -65,7 +65,8 @@ jobs:
       - name: Build wheels
         uses: pypa/cibuildwheel@v2.23
         env:
-          CIBW_ARCHS: 'all'
+          CIBW_ARCHS_LINUX: 'all'
+          CIBW_ARCHS_MACOS: 'all'
           CIBW_BUILD: ${{ inputs.wheel_versions }}
           CIBW_FREE_THREADED_SUPPORT: ${{ inputs.allow_free_threaded }}
           CIBW_PRERELEASE_PYTHONS: ${{ inputs.allow_prereleases }}
