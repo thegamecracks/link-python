@@ -18,12 +18,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         fetch-depth: 0
         fetch-tags: true
         submodules: recursive
-    - uses: actions/setup-python@v5
+    - uses: actions/setup-python@v6
       with:
         cache: pip
         cache-dependency-path: pyproject.toml
