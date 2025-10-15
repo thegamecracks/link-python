@@ -2,7 +2,7 @@
 #include <pybind11/functional.h>
 #include <pybind11/pybind11.h>
 
-PYBIND11_MODULE(_link, m, pybind11::mod_gil_not_used())
+PYBIND11_MODULE(_link, m, pybind11::mod_gil_not_used(), pybind11::multiple_interpreters::per_interpreter_gil())
 {
   using namespace ableton;
   using namespace pybind11;
