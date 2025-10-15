@@ -127,4 +127,5 @@ class CMakeBuild(build_ext):
 setup(
     ext_modules=[CMakeExtension("LinkPython-extern")],
     cmdclass={"build_ext": CMakeBuild},
+    license="MIT",
 )
