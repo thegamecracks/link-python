@@ -7,11 +7,14 @@ on:
         description: Wheel versions to build
         required: true
         default: cp38* cp39* cp310* cp311* cp312* cp313* cp314*
-      cibw_enable:
-        description: Non-default builds
-      cibw_skip:
-        description: Builds to skip
-        default: cp3??t-*
+      allow_free_threaded:
+        description: Allow free-threaded builds
+        required: true
+        type: boolean
+      allow_prereleases:
+        description: Allow pre-release builds
+        required: true
+        type: boolean
       publish:
         description: Publish wheels
         required: true
@@ -80,8 +83,8 @@ jobs:
         env:
           CIBW_ARCHS: ${{ matrix.archs }}
           CIBW_BUILD: ${{ inputs.wheel_versions }}
-          CIBW_ENABLE: ${{ inputs.cibw_enable }}
-          CIBW_SKIP: ${{ inputs.cibw_skip }}
+          CIBW_ENABLE: ${{ inputs.allow_prereleases && 'cpython-prerelease' || '' }}
+          CIBW_SKIP: ${{ !inputs.allow_free_threaded && 'cp3??t-*' || '' }}
           CIBW_TEST_REQUIRES: 'pytest>=7.4.4'
           CIBW_TEST_COMMAND: 'pytest --config-file {project}/pyproject.toml {project}/tests'
 
