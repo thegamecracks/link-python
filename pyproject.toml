@@ -18,8 +18,8 @@ classifiers = [
 ]
 dynamic = ["license", "version"]
 
-[project.optional-dependencies]
-tests = ["pytest>=7.4.4"]
+[dependency-groups]
+dev = ["pytest>=7.4.4"]
 
 [project.urls]
 Homepage = "https://github.com/thegamecracks/link-python"
