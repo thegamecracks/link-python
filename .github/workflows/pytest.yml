@@ -28,5 +28,5 @@ jobs:
         cache: pip
         cache-dependency-path: pyproject.toml
         python-version: '3.11'
-    - run: pip install .[tests]
+    - run: pip install --group dev .
     - run: pytest
