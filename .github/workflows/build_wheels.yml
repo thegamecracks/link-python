@@ -59,7 +59,7 @@ jobs:
             archs: s390x
           - os: windows-latest
             archs: auto
-          - os: macos-13
+          - os: macos-15-intel
             archs: auto
           - os: macos-latest
             archs: auto
