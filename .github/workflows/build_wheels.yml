@@ -36,7 +36,7 @@ jobs:
       - name: Build source distribution
         run: pipx run build --sdist
 
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@v7
         with:
           name: sdist
           path: dist/*.tar.gz
@@ -88,7 +88,7 @@ jobs:
           CIBW_TEST_REQUIRES: 'pytest>=7.4.4'
           CIBW_TEST_COMMAND: 'pytest --config-file {project}/pyproject.toml {project}/tests'
 
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@v7
         with:
           name: wheel-${{ matrix.os }}-${{ matrix.archs }}
           path: ./wheelhouse/*.whl
@@ -103,12 +103,12 @@ jobs:
       id-token: write
 
     steps:
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         with:
           name: sdist
           path: dist
 
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@v8
         with:
           path: dist
           pattern: wheel-*
