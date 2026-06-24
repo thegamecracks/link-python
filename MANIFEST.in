@@ -3,6 +3,7 @@ graft src
 graft src-py
 include CMakeLists.txt
 global-exclude *.pdf
+prune example
 prune **/.github
 prune **/assets
 prune **/ci
