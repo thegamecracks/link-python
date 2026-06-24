@@ -20,7 +20,8 @@ can be found [in their repository][2].
 | CPython 3.12   |  ❌   |  ❌    |  ✅   |  ✅    |  ✅   |  ✅  |
 | CPython 3.13\* |  ❌   |  ❌    |  ❌   |  ✅    |  ✅   |  ✅  |
 | CPython 3.14   |  ❌   |  ❌    |  ❌   |  ❌    |  ✅   |  ✅  |
-| CPython 3.15+  |  ❌   |  ❌    |  ❌   |  ❌    |  ❌   |  ❌  |
+| CPython 3.15   |  ❌   |  ❌    |  ❌   |  ❌    |  ❌   |  ❌  |
+| CPython 3.16+  |  ❌   |  ❌    |  ❌   |  ❌    |  ❌   |  ❌  |
 
 \* CPython 3.13's experimental free-threading builds are not supported.
 
