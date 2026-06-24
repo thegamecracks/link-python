@@ -1,9 +1,10 @@
 [build-system]
-requires = ["setuptools>=61", "setuptools-scm>=7", "wheel", "ninja", "cmake>=3.4"]
+requires = ["setuptools>=61", "wheel", "ninja", "cmake>=3.4"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "LinkPython-extern"
+version = "1.2.1"
 description = "A fork of the LinkPython wrapper for Ableton Link"
 requires-python = ">=3.9,<3.15"
 authors = [{ name = "gonzaloflirt" }]
@@ -16,7 +17,7 @@ classifiers = [
     "Programming Language :: Python",
     "Topic :: System :: Networking",
 ]
-dynamic = ["license", "version"]
+dynamic = ["license"]
 
 [dependency-groups]
 dev = ["pytest>=7.4.4"]
@@ -32,8 +33,6 @@ addopts = [
 
 [tool.setuptools.packages.find]
 where = ["src-py"]
-
-[tool.setuptools_scm]
 
 [tool.uv]
 cache-keys = [
