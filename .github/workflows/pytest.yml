@@ -23,10 +23,6 @@ jobs:
         fetch-depth: 0
         fetch-tags: true
         submodules: recursive
-    - uses: actions/setup-python@v6
-      with:
-        cache: pip
-        cache-dependency-path: pyproject.toml
-        python-version: '3.11'
-    - run: pip install --group dev .
+    - uses: astral-sh/setup-uv@v8.2.0
+    - run: uv sync --locked
     - run: pytest
