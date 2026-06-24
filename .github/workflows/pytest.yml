@@ -25,4 +25,4 @@ jobs:
         submodules: recursive
     - uses: astral-sh/setup-uv@v8.2.0
     - run: uv sync --locked
-    - run: pytest
+    - run: uv run -m pytest
