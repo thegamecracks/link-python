@@ -37,7 +37,7 @@ pip install LinkPython-extern
 ## Building from source
 
 If you want to build this package from source, you will need CMake installed.
-You however do not need to manually build the project, as setuptools will
+You however do not need to manually build the project, as scikit-build-core will
 handle invoking cmake when you install it with pip. To install directly
 from the main branch:
 

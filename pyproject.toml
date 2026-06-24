@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=82", "wheel", "ninja", "cmake>=3.4"]
-build-backend = "setuptools.build_meta"
+requires = ["pybind11>=3.0.4", "scikit-build-core>=0.12.2"]
+build-backend = "scikit_build_core.build"
 
 [project]
 name = "LinkPython-extern"
@@ -32,8 +32,21 @@ addopts = [
     "--ignore=modules/",
 ]
 
-[tool.setuptools.packages.find]
-where = ["src-py"]
+[tool.scikit-build]
+minimum-version = "build-system.requires"
+cmake.version = "CMakeLists.txt"
+sdist.include = ["modules"]
+sdist.exclude = [
+    "*.pdf",
+    ".github",
+    "assets",
+    "ci",
+    "docs",
+    "example",
+    "examples",
+    "tests",
+]
+wheel.packages = ["src-py/link"]
 
 [tool.uv]
 cache-keys = [
