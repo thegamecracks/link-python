@@ -44,6 +44,14 @@ from the main branch:
 pip install git+https://github.com/thegamecracks/link-python
 ```
 
+If building from the repository directly, make sure to clone all submodules using:
+
+```sh
+git clone --recurse-submodules https://github.com/thegamecracks/link-python
+# or, if already cloned:
+git submodule update --init --recursive
+```
+
 ## License:
 This depends on [Link][1] and [pybind11][4]. Please mind the licenses of those libraries and their dependencies.
 
