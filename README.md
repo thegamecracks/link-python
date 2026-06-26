@@ -24,7 +24,7 @@ You can see the full API documentation in [`__init__.pyi`], or look at
 the [LinkHut.py] example which is equivalent to Ableton Link's
 [linkhut] example.
 
-For asyncio usage, consider trying out the [aalink] project!
+For asyncio usage, consider trying out artfwo's [aalink] project!
 
 ## Installation
 
