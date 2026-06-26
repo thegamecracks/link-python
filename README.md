@@ -24,6 +24,8 @@ You can see the full API documentation in [`__init__.pyi`], or look at
 the [LinkHut.py] example which is equivalent to Ableton Link's
 [linkhut] example.
 
+For asyncio usage, consider trying out the [aalink] project!
+
 ## Installation
 
 This project can be installed from PyPI under the [LinkPython-extern] name:
@@ -83,6 +85,7 @@ Please mind the licenses of those libraries and their dependencies.
 [`__init__.pyi`]: https://github.com/thegamecracks/link-python/blob/master/src-py/link/__init__.pyi
 [LinkHut.py]: https://github.com/thegamecracks/link-python/blob/master/example/LinkHut.py
 [linkhut]: https://github.com/Ableton/link/blob/master/examples/linkhut/main.cpp
+[aalink]: https://github.com/artfwo/aalink
 [LinkPython-extern]: https://pypi.org/project/LinkPython-extern/
 [LinkPython]: https://github.com/munshkr/link-python
 [Unlicense]: /LICENSE.md
