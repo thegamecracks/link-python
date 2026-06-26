@@ -11,7 +11,7 @@ wheels.
 ```py
 from link import Link
 
-link = Link(tempo)
+link = Link(120)
 clock = link.clock()
 micros = clock.micros()
 
