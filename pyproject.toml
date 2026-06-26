@@ -19,6 +19,13 @@ classifiers = [
     "Programming Language :: Python",
     "Topic :: System :: Networking",
 ]
+keywords = [
+    "ableton",
+    "ableton link",
+    "link",
+    "music",
+    "sync",
+]
 
 [dependency-groups]
 dev = ["pytest>=8.4.2"]
