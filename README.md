@@ -1,11 +1,38 @@
-# Python wrapper for [Ableton Link]
+# LinkPython-extern
 
 [![Build](https://github.com/thegamecracks/link-python/actions/workflows/build_wheels.yml/badge.svg)](https://github.com/thegamecracks/link-python/actions/workflows/build_wheels.yml)
 [![PyPI](https://img.shields.io/pypi/v/LinkPython-extern?label=View%20on%20pypi&style=flat-square)](https://pypi.org/project/LinkPython-extern/)
 
-This fork was created to streamline the user experience for installing LinkPython
-by uploading pre-built wheels on PyPI. More information about LinkPython
-can be found [in their repository].
+A Python wrapper for [Ableton Link], forked from gonzaloflirt's [link-python]
+to streamline the user experience with new methods, type stubs, and pre-built
+wheels.
+
+```py
+from link import Link
+
+link = Link(tempo)
+clock = link.clock()
+micros = clock.micros()
+
+state = link.captureAppSessionState()
+beat = state.beatAtTime(micros, 4)
+phase = state.phaseAtTime(micros, 4)
+```
+
+You can see the full API documentation in [`__init__.pyi`], or look at
+the [LinkHut.py] example which is equivalent to Ableton Link's
+[linkhut] example.
+
+## Installation
+
+This project can be installed from PyPI under the [LinkPython-extern] name:
+
+```sh
+pip install LinkPython-extern
+```
+
+Note that we are *not* the same as [LinkPython], which is a different fork
+of link-python by munshkr.
 
 ## Python compatibility
 
@@ -24,15 +51,6 @@ can be found [in their repository].
 | CPython 3.16+  |  ❌   |  ❌    |  ❌   |  ❌    |  ❌   |    ❌    |  ❌  |
 
 \* CPython 3.13's experimental free-threading builds are not supported.
-
-## Installation
-
-Distributions are available on PyPI with the [LinkPython-extern] package.
-Example install command:
-
-```sh
-pip install LinkPython-extern
-```
 
 ## Building from source
 
@@ -57,7 +75,11 @@ git submodule update --init --recursive
 This depends on [Link] and [pybind11]. Please mind the licenses of those libraries and their dependencies.
 
 [Ableton Link]: https://github.com/ableton/link.git
-[in their repository]: https://github.com/gonzaloflirt/link-python
+[link-python]: https://github.com/gonzaloflirt/link-python
+[`__init__.pyi`]: https://github.com/thegamecracks/link-python/blob/master/src-py/link/__init__.pyi
+[LinkHut.py]: https://github.com/thegamecracks/link-python/blob/master/example/LinkHut.py
+[linkhut]: https://github.com/Ableton/link/blob/master/examples/linkhut/main.cpp
 [LinkPython-extern]: https://pypi.org/project/LinkPython-extern/
+[LinkPython]: https://github.com/munshkr/link-python
 [Link]: https://github.com/ableton/link.git
 [pybind11]: https://github.com/pybind/pybind11
