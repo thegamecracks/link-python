@@ -1,5 +1,5 @@
 # TODO: define test matrix for platform + python version
-name: Run pytest
+name: Tests
 
 on:
   push:
