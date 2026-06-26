@@ -1,11 +1,11 @@
-# Python wrapper for [Ableton Link][1]
+# Python wrapper for [Ableton Link]
 
 [![Build](https://github.com/thegamecracks/link-python/actions/workflows/build_wheels.yml/badge.svg)](https://github.com/thegamecracks/link-python/actions/workflows/build_wheels.yml)
 [![PyPI](https://img.shields.io/pypi/v/LinkPython-extern?label=View%20on%20pypi&style=flat-square)](https://pypi.org/project/LinkPython-extern/)
 
 This fork was created to streamline the user experience for installing LinkPython
 by uploading pre-built wheels on PyPI. More information about LinkPython
-can be found [in their repository][2].
+can be found [in their repository].
 
 ## Python compatibility
 
@@ -27,7 +27,7 @@ can be found [in their repository][2].
 
 ## Installation
 
-Distributions are available on PyPI with the [LinkPython-extern][3] package.
+Distributions are available on PyPI with the [LinkPython-extern] package.
 Example install command:
 
 ```sh
@@ -54,9 +54,10 @@ git submodule update --init --recursive
 ```
 
 ## License:
-This depends on [Link][1] and [pybind11][4]. Please mind the licenses of those libraries and their dependencies.
+This depends on [Link] and [pybind11]. Please mind the licenses of those libraries and their dependencies.
 
-[1]: https://github.com/ableton/link.git
-[2]: https://github.com/gonzaloflirt/link-python
-[3]: https://pypi.org/project/LinkPython-extern/
-[4]: https://github.com/pybind/pybind11
+[Ableton Link]: https://github.com/ableton/link.git
+[in their repository]: https://github.com/gonzaloflirt/link-python
+[LinkPython-extern]: https://pypi.org/project/LinkPython-extern/
+[Link]: https://github.com/ableton/link.git
+[pybind11]: https://github.com/pybind/pybind11
