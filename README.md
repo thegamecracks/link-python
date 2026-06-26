@@ -71,8 +71,11 @@ git clone --recurse-submodules https://github.com/thegamecracks/link-python
 git submodule update --init --recursive
 ```
 
-## License:
-This depends on [Link] and [pybind11]. Please mind the licenses of those libraries and their dependencies.
+## License
+
+This project is written under [Unlicense] but also depends on,
+among other libraries, [Ableton Link] and [pybind11].
+Please mind the licenses of those libraries and their dependencies.
 
 [Ableton Link]: https://github.com/ableton/link.git
 [link-python]: https://github.com/gonzaloflirt/link-python
@@ -81,5 +84,5 @@ This depends on [Link] and [pybind11]. Please mind the licenses of those librari
 [linkhut]: https://github.com/Ableton/link/blob/master/examples/linkhut/main.cpp
 [LinkPython-extern]: https://pypi.org/project/LinkPython-extern/
 [LinkPython]: https://github.com/munshkr/link-python
-[Link]: https://github.com/ableton/link.git
+[Unlicense]: /LICENSE.md
 [pybind11]: https://github.com/pybind/pybind11
