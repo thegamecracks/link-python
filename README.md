@@ -88,5 +88,5 @@ Please mind the licenses of those libraries and their dependencies.
 [aalink]: https://github.com/artfwo/aalink
 [LinkPython-extern]: https://pypi.org/project/LinkPython-extern/
 [LinkPython]: https://github.com/munshkr/link-python
-[Unlicense]: /LICENSE.md
+[Unlicense]: https://github.com/thegamecracks/link-python/blob/master/LICENSE.md
 [pybind11]: https://github.com/pybind/pybind11
