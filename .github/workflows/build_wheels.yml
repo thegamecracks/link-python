@@ -61,7 +61,7 @@ jobs:
             archs: auto
           - os: windows-11-arm
             archs: auto
-          - os: macos-15-intel
+          - os: macos-26-intel
             archs: auto
           - os: macos-latest
             archs: auto
