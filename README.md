@@ -1,7 +1,8 @@
 # LinkPython-extern
 
-[![Build](https://github.com/thegamecracks/link-python/actions/workflows/build_wheels.yml/badge.svg)](https://github.com/thegamecracks/link-python/actions/workflows/build_wheels.yml)
 [![PyPI](https://img.shields.io/pypi/v/LinkPython-extern?label=View%20on%20pypi&style=flat-square)](https://pypi.org/project/LinkPython-extern/)
+[![Build](https://github.com/thegamecracks/link-python/actions/workflows/build_wheels.yml/badge.svg)](https://github.com/thegamecracks/link-python/actions/workflows/build_wheels.yml)
+[![Tests](https://github.com/thegamecracks/link-python/actions/workflows/pytest.yml/badge.svg)](https://github.com/thegamecracks/link-python/actions/workflows/pytest.yml)
 
 A Python wrapper for [Ableton Link], forked from gonzaloflirt's [link-python]
 to streamline the user experience with new methods, type stubs, and pre-built
