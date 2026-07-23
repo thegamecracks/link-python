@@ -13,6 +13,8 @@ on:
       - 'src-py/**.py'
       - 'tests/**.py'
 
+permissions: {}
+
 jobs:
   test:
     runs-on: ubuntu-latest
