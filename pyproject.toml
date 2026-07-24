@@ -39,6 +39,9 @@ addopts = [
     "--ignore=modules/",
 ]
 
+[tool.ruff]
+extend-exclude = ["modules"]
+
 [tool.ruff.lint.isort]
 combine-as-imports = true
 
