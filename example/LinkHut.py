@@ -1,5 +1,6 @@
-import link
 import time
+
+import link
 
 QUANTUM = 4  # beats per bar
 
