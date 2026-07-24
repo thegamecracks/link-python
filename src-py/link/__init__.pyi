@@ -17,12 +17,12 @@ class SessionState:
 
         """
 
-    def setTempo(self, __tempo: float, __time: int) -> None:
+    def setTempo(self, tempo: float, time: int, /) -> None:
         """Set the timeline tempo to the given bpm value, taking
         effect at the given time.
         """
 
-    def beatAtTime(self, __time: int, __quantum: float) -> float:
+    def beatAtTime(self, time: int, quantum: float, /) -> float:
         """Get the beat value corresponding to the given time
         for the given quantum.
 
@@ -34,7 +34,7 @@ class SessionState:
 
         """
 
-    def phaseAtTime(self, __time: int, __quantum: float) -> float:
+    def phaseAtTime(self, time: int, quantum: float, /) -> float:
         """Get the session phase at the given time for the given
         quantum.
 
@@ -47,7 +47,7 @@ class SessionState:
 
         """
 
-    def timeAtBeat(self, __beat: float, __quantum: float) -> float:
+    def timeAtBeat(self, beat: float, quantum: float, /) -> float:
         """Get the time at which the given beat occurs for the
         given quantum.
 
@@ -56,7 +56,7 @@ class SessionState:
 
         """
 
-    def requestBeatAtTime(self, __beat: float, __time: int, __quantum: float) -> None:
+    def requestBeatAtTime(self, beat: float, time: int, quantum: float, /) -> None:
         """Attempt to map the given beat to the given time in the
         context of the given quantum.
 
@@ -90,12 +90,12 @@ class SessionState:
     def isPlaying(self) -> bool:
         """Return True if the transport is playing, False otherwise."""
 
-    def setIsPlaying(self, __isPlaying: bool, __time: int) -> None:
+    def setIsPlaying(self, isPlaying: bool, time: int, /) -> None:
         """Set if transport should be playing or stopped, taking effect
         at the given time.
         """
 
-    def forceBeatAtTime(self, __beat: float, __time: int, __quantum: float) -> None:
+    def forceBeatAtTime(self, beat: float, time: int, quantum: float, /) -> None:
         """Rudely re-map the beat/time relationship for all peers
         in a session.
 
@@ -122,7 +122,7 @@ class SessionState:
     def timeForIsPlaying(self) -> int:
         """Get the time in microseconds at which a transport start/stop occurs."""
 
-    def requestBeatAtStartPlayingTime(self, __beat: float, __quantum: float) -> None:
+    def requestBeatAtStartPlayingTime(self, beat: float, quantum: float, /) -> None:
         """Convenience function to attempt to map the given beat to the time
         when transport is starting to play in context of the given quantum.
 
@@ -132,10 +132,11 @@ class SessionState:
 
     def setIsPlayingAndRequestBeatAtTime(
         self,
-        __isPlaying: bool,
-        __time: int,
-        __beat: float,
-        __quantum: float,
+        isPlaying: bool,
+        time: int,
+        beat: float,
+        quantum: float,
+        /,
     ) -> None:
         """Convenience function to start or stop transport at a given time and
         attempt to map the given beat to this time in context of the given quantum.
@@ -175,7 +176,7 @@ class Link:
 
     """
 
-    def __init__(self, __bpm: float) -> None:
+    def __init__(self, bpm: float, /) -> None:
         """
         :param bpm: The initial tempo of the session.
         """
@@ -205,7 +206,7 @@ class Link:
 
         """
 
-    def commitAppSessionState(self, __state: SessionState) -> None:
+    def commitAppSessionState(self, state: SessionState, /) -> None:
         """Commit the given Session State to the Link session from an
         application thread.
 
@@ -220,7 +221,7 @@ class Link:
     captureSessionState = captureAppSessionState
     commitSessionState = commitAppSessionState
 
-    def setNumPeersCallback(self, __callback: Callable[[int], Any]) -> None:
+    def setNumPeersCallback(self, callback: Callable[[int], Any], /) -> None:
         """Register a callback to be notified when the number of
         peers in the Link session changes.
 
@@ -232,7 +233,7 @@ class Link:
 
         """
 
-    def setTempoCallback(self, __callback: Callable[[float], Any]) -> None:
+    def setTempoCallback(self, callback: Callable[[float], Any], /) -> None:
         """Register a callback to be notified when the session
         tempo changes.
 
@@ -244,7 +245,7 @@ class Link:
 
         """
 
-    def setStartStopCallback(self, __callback: Callable[[bool], Any]) -> None:
+    def setStartStopCallback(self, callback: Callable[[bool], Any], /) -> None:
         """Register a callback to be notified when the state of
         start/stop isPlaying changes.
 
