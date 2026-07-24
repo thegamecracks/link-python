@@ -4,14 +4,18 @@ name: Tests
 on:
   push:
     paths:
-      - 'src/**.cpp'
-      - 'src-py/**.py'
-      - 'tests/**.py'
+      - 'src/'
+      - 'tests/'
+      - '**.py'
+      - 'pyproject.toml'
+      - 'uv.lock'
   pull_request:
     paths:
-      - 'src/**.cpp'
-      - 'src-py/**.py'
-      - 'tests/**.py'
+      - 'src/'
+      - 'tests/'
+      - '**.py'
+      - 'pyproject.toml'
+      - 'uv.lock'
 
 permissions: {}
 
