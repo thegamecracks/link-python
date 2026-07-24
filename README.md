@@ -1,8 +1,10 @@
 # LinkPython-extern
 
 [![PyPI](https://img.shields.io/pypi/v/LinkPython-extern?label=View%20on%20pypi&style=flat-square)](https://pypi.org/project/LinkPython-extern/)
-[![Build](https://github.com/thegamecracks/link-python/actions/workflows/build_wheels.yml/badge.svg)](https://github.com/thegamecracks/link-python/actions/workflows/build_wheels.yml)
-[![Tests](https://github.com/thegamecracks/link-python/actions/workflows/pytest.yml/badge.svg)](https://github.com/thegamecracks/link-python/actions/workflows/pytest.yml)
+[![Lints](https://img.shields.io/github/actions/workflow/status/thegamecracks/link-python/ruff-check.yml?style=flat-square&logo=ruff&label=lints)](https://github.com/thegamecracks/link-python/actions/workflows/ruff-check.yml)
+[![Tests](https://img.shields.io/github/actions/workflow/status/thegamecracks/link-python/pytest.yml?style=flat-square&logo=pytest&label=tests)](https://github.com/thegamecracks/link-python/actions/workflows/pytest.yml)
+[![Types](https://img.shields.io/github/actions/workflow/status/thegamecracks/link-python/type-check.yml?style=flat-square&logo=ty&label=types)](https://github.com/thegamecracks/link-python/actions/workflows/type-check.yml)
+[![Style](https://img.shields.io/github/actions/workflow/status/thegamecracks/link-python/ruff-format.yml?style=flat-square&logo=ruff&label=style)](https://github.com/thegamecracks/link-python/actions/workflows/ruff-format.yml)
 
 A Python wrapper for [Ableton Link], forked from gonzaloflirt's [link-python]
 to streamline the user experience with new methods, type stubs, and pre-built
