@@ -39,6 +39,9 @@ addopts = [
     "--ignore=modules/",
 ]
 
+[tool.ruff.lint.isort]
+combine-as-imports = true
+
 [tool.scikit-build]
 minimum-version = "build-system.requires"
 cmake.version = "CMakeLists.txt"
