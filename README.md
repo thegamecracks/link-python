@@ -41,7 +41,7 @@ of link-python by munshkr.
 
 ## Python compatibility
 
-|                | v1.0.0 | v1.0.1 | v1.0.4 | v1.1.0 | v1.2.0 | v1.3.0a1 | main |
+|                | v1.0.0 | v1.0.1 | v1.0.4 | v1.1.0 | v1.2.0 | v1.3.0a3 | main |
 |----------------|:------:|:------:|:------:|:------:|:------:|:--------:|:----:|
 | CPython 3.6    |  ✅   |  ✅    |  ✅   |  ❌    |  ❌   |    ❌    |  ❌  |
 | CPython 3.7    |  ✅   |  ✅    |  ✅   |  ✅    |  ❌   |    ❌    |  ❌  |
@@ -50,12 +50,18 @@ of link-python by munshkr.
 | CPython 3.10   |  ✅   |  ✅    |  ✅   |  ✅    |  ✅   |    ✅    |  ✅  |
 | CPython 3.11   |  ❌   |  ✅    |  ✅   |  ✅    |  ✅   |    ✅    |  ✅  |
 | CPython 3.12   |  ❌   |  ❌    |  ✅   |  ✅    |  ✅   |    ✅    |  ✅  |
-| CPython 3.13\* |  ❌   |  ❌    |  ❌   |  ✅    |  ✅   |    ✅    |  ✅  |
+| CPython 3.13¹  |  ❌   |  ❌    |  ❌   |  ✅    |  ✅   |    ✅    |  ✅  |
 | CPython 3.14   |  ❌   |  ❌    |  ❌   |  ❌    |  ✅   |    ✅    |  ✅  |
-| CPython 3.15   |  ❌   |  ❌    |  ❌   |  ❌    |  ❌   |    ❌    |  ❌  |
-| CPython 3.16+  |  ❌   |  ❌    |  ❌   |  ❌    |  ❌   |    ❌    |  ❌  |
+| CPython 3.15+  |  ❌   |  ❌    |  ❌   |  ❌    |  ❌   |    *️⃣    |  *️⃣  |
 
-\* CPython 3.13's experimental free-threading builds are not supported.
+✅ This library version provides prebuilt wheels for the given Python version.
+
+*️⃣ This library version does not provide prebuilt wheels,
+   but may be compiled from source. Compatibility is not guaranteed.
+
+❌ This library version cannot be compiled for the given Python version.
+
+¹ CPython 3.13's experimental free-threading builds are not supported.
 
 ## Building from source
 
