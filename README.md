@@ -65,21 +65,30 @@ of link-python by munshkr.
 
 ## Building from source
 
-If you want to build this package from source, you will need CMake installed.
-You however do not need to manually build the project, as scikit-build-core will
-handle invoking cmake when you install it with pip. To install directly
-from the main branch:
+If you want to build this package from source, you will need CMake and a suitable
+C++ compiler like g++ (Linux) or [MSVC](https://visualstudio.microsoft.com/visual-cpp-build-tools/) (Windows).
+
+To explicitly compile from a PyPI release:
+
+```sh
+pip install LinkPython-extern --no-binary LinkPython-extern
+```
+
+To compile from our main branch:
 
 ```sh
 pip install git+https://github.com/thegamecracks/link-python
 ```
 
-If building from the repository directly, make sure to clone all submodules using:
+To compile from a clone of the repository, make sure to clone all
+Git submodules beforehand:
 
 ```sh
 git clone --recurse-submodules https://github.com/thegamecracks/link-python
+pip install .
 # or, if already cloned:
 git submodule update --init --recursive
+pip install .
 ```
 
 ## License
