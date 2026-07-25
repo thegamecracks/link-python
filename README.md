@@ -46,18 +46,18 @@ of link-python by munshkr.
 | CPython 3.6    |  ✅   |  ✅    |  ✅   |  ❌    |  ❌   |    ❌    |  ❌  |
 | CPython 3.7    |  ✅   |  ✅    |  ✅   |  ✅    |  ❌   |    ❌    |  ❌  |
 | CPython 3.8    |  ✅   |  ✅    |  ✅   |  ✅    |  ✅   |    ❌    |  ❌  |
-| CPython 3.9    |  ✅   |  ✅    |  ✅   |  ✅    |  ✅   |    ✅    |  ✅  |
-| CPython 3.10   |  ✅   |  ✅    |  ✅   |  ✅    |  ✅   |    ✅    |  ✅  |
-| CPython 3.11   |  ❌   |  ✅    |  ✅   |  ✅    |  ✅   |    ✅    |  ✅  |
-| CPython 3.12   |  ❌   |  ❌    |  ✅   |  ✅    |  ✅   |    ✅    |  ✅  |
-| CPython 3.13¹  |  ❌   |  ❌    |  ❌   |  ✅    |  ✅   |    ✅    |  ✅  |
-| CPython 3.14   |  ❌   |  ❌    |  ❌   |  ❌    |  ✅   |    ✅    |  ✅  |
+| CPython 3.9    |  ✅   |  ✅    |  ✅   |  ✅    |  ✅   |    ✅    |  *️⃣  |
+| CPython 3.10   |  ✅   |  ✅    |  ✅   |  ✅    |  ✅   |    ✅    |  *️⃣  |
+| CPython 3.11   |  ❌   |  ✅    |  ✅   |  ✅    |  ✅   |    ✅    |  *️⃣  |
+| CPython 3.12   |  ❌   |  ❌    |  ✅   |  ✅    |  ✅   |    ✅    |  *️⃣  |
+| CPython 3.13¹  |  ❌   |  ❌    |  ❌   |  ✅    |  ✅   |    ✅    |  *️⃣  |
+| CPython 3.14   |  ❌   |  ❌    |  ❌   |  ❌    |  ✅   |    ✅    |  *️⃣  |
 | CPython 3.15+  |  ❌   |  ❌    |  ❌   |  ❌    |  ❌   |    *️⃣    |  *️⃣  |
 
-✅ This library version provides prebuilt wheels for the given Python version.
+✅ This library version provides prebuilt wheels on PyPI for the given Python version.
 
 *️⃣ This library version does not provide prebuilt wheels,
-   but may be compiled from source. Compatibility is not guaranteed.
+   but may be compiled from source.
 
 ❌ This library version cannot be compiled for the given Python version.
 
