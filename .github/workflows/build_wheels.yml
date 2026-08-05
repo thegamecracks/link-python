@@ -6,7 +6,7 @@ on:
       wheel_versions:
         description: Wheel versions to build
         required: true
-        default: cp39* cp310* cp311* cp312* cp313* cp314*
+        default: cp39* cp310* cp311* cp312* cp313* cp314* cp315*
       allow_free_threaded:
         description: Allow free-threaded builds
         required: true
@@ -81,7 +81,7 @@ jobs:
           platforms: all
 
       - name: Build wheels
-        uses: pypa/cibuildwheel@4726cd35bb13f7bde50cf2761f2499ac7b3aa32c # v4.1.1
+        uses: pypa/cibuildwheel@1828c10ab37f080699c7b81cea34097c684a7074 # v4.2.0
         env:
           CIBW_ARCHS: ${{ matrix.archs }}
           CIBW_BUILD: ${{ inputs.wheel_versions }}
