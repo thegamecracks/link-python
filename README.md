@@ -52,7 +52,8 @@ of link-python by munshkr.
 | CPython 3.12   |  ❌   |  ❌    |  ✅   |  ✅    |  ✅   |   ✅   |  *️⃣  |
 | CPython 3.13¹  |  ❌   |  ❌    |  ❌   |  ✅    |  ✅   |   ✅   |  *️⃣  |
 | CPython 3.14   |  ❌   |  ❌    |  ❌   |  ❌    |  ✅   |   ✅   |  *️⃣  |
-| CPython 3.15+  |  ❌   |  ❌    |  ❌   |  ❌    |  ❌   |   *️⃣   |  *️⃣  |
+| CPython 3.15   |  ❌   |  ❌    |  ❌   |  ❌    |  ❌   |   ✅   |  *️⃣  |
+| CPython 3.16+  |  ❌   |  ❌    |  ❌   |  ❌    |  ❌   |   *️⃣   |  *️⃣  |
 
 ✅ This library version provides prebuilt wheels on PyPI for the given Python version.
 
